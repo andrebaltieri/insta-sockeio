@@ -1,0 +1,15 @@
+<div class="page-header">
+    <h1>Postagens
+        <small>mais recentes</small>
+    </h1>
+</div>
+
+
+<div class="col-md-4" ng-repeat="post in posts">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <img ng-src="{{ post.photo }}" alt="" class="{{ post.filter }}" width="100%"/>
+        </div>
+        <div class="panel-footer">{{ post.message }}</div>
+    </div>
+</div>
